@@ -62,11 +62,12 @@ const Navbar = () => {
                 />
                 <FaSearch className='cursor-pointer'/>
             </div>
-            <Link to="/account" className="text-white">
-              <img 
+            <Link to="/signup" className="text-white">
+              {/* <img 
                 src="https://cdn-icons-png.flaticon.com/128/149/149071.png" 
                 className='w-12'
-                alt="" />
+                alt="" /> */}
+                <button type="button" className='bg-teal-600 font-serif rounded-3xl py-1.5 px-5 cursor-pointer'>Sign up</button>
             </Link>
             <Link to="/cart" className="text-white relative">
               <MdOutlineShoppingCart size={40}/>
