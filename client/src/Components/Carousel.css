@@ -1,0 +1,24 @@
+.slick-dots {
+    bottom: 10px; /* Positioning the dots */
+    z-index: 10; /* Ensure the dots are above the images */
+}
+  
+.slick-dots li {
+    margin: 0 5px; /* Space between dots */
+}
+  
+.slick-dots li button {
+    background: transparent; /* Background color for dots */
+    border-radius: 50%; /* Make the dots circular */
+    width: 10px; /* Dot width */
+    height: 10px; /* Dot height */
+    opacity: 1; /* Make them slightly transparent */
+    border: 1px solid grey;
+    outline: none;
+}
+  
+.slick-dots li.slick-active button {
+    opacity: 1; /* Full opacity for the active dot */
+    background: teal; /* Color for the active dot */
+    border: none;
+}
