@@ -77,7 +77,7 @@ const SignUp = () => {
   }, [showModal, loading]);
 
   return (
-    <div className='sign-up-container'>
+    <div className='w-full min-h-[100vh] flex items-center justify-center'>
       <motion.div
         initial={{
           opacity: 0,
@@ -91,23 +91,23 @@ const SignUp = () => {
           opacity: 0,
           translateY: 200,
         }}
-        className={`sign-up-box`}
+        className={`bg-black text-white rounded-3xl px-5 py-3 font-serif flex flex-col gap-3`}
       >
-        <h1>Sign up</h1>
-        <form className="input-fields" onSubmit={handleSubmit}>
+        <h1 className='text-center text-3xl mb-1'>Sign up</h1>
+        <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
           <div className="input-container">
             <h3>Your username</h3>
-            <input type="text" id="username" onChange={handleChange} />
+            <input type="text" id="username" onChange={handleChange} className='outline-none bg-white rounded-full h-12 w-72 px-3 text-black' />
           </div>
           <div className="input-container">
             <h3>Your email</h3>
-            <input type="email" id="email" onChange={handleChange} />
+            <input type="email" id="email" onChange={handleChange} className='outline-none bg-white rounded-full h-12 w-72 px-3 text-black' />
           </div>
           <div className="input-container">
             <h3>Your password</h3>
-            <input type="password" id="password" onChange={handleChange} />
+            <input type="password" id="password" onChange={handleChange} className='outline-none rounded-full h-12 w-72 px-3 text-black'/>
           </div>
-          <button type="submit" disabled={loading}>
+          <button type="submit" disabled={loading} className='outline-none rounded h-9 w-[100%] bg-teal-500 cursor-pointer'>
             {loading ? (
               <>
                 <div style={spinnerStyle}></div>

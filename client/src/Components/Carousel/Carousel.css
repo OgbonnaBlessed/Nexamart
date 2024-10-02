@@ -4,7 +4,7 @@
 }
   
 .slick-dots li {
-    margin: 0 5px; /* Space between dots */
+    margin: 0 0; /* Space between dots */
 }
   
 .slick-dots li button {
@@ -13,8 +13,14 @@
     width: 10px; /* Dot width */
     height: 10px; /* Dot height */
     opacity: 1; /* Make them slightly transparent */
-    border: 1px solid grey;
+    background-color: beige;
     outline: none;
+    transition: all .5s ease;
+}
+
+.slick-dots li button::before {
+    content: '';
+    position: absolute;
 }
   
 .slick-dots li.slick-active button {

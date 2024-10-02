@@ -8,7 +8,10 @@ module.exports = {
       colors: {
         darkslategray: '#2F4F4F',
         limegreen: '#C0F10F'
-      }
+      },
+      screens: {
+        lgx: '1100px'
+      },
     },
   },
   plugins: [],

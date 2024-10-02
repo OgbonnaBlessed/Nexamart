@@ -38,7 +38,7 @@ const OAuth = () => {
     // }
 
   return (
-    <button type='button' className="google">
+    <button type='button'  className='flex items-center outline-none rounded h-9 w-[100%] text-white bg-teal-500 justify-center gap-1'>
         <FcGoogle/>
         <p>Continue with Google</p>
     </button>

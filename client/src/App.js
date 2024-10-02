@@ -8,6 +8,8 @@ import Shop from './Pages/Shop'
 import Offers from './Pages/Offers'
 import Contact from './Pages/Contact'
 import About from './Pages/About'
+import Watchlist from './Pages/Watchlist'
+import Cart from './Pages/Cart'
 
 const App = () => {
   return (
@@ -20,6 +22,8 @@ const App = () => {
           <Route path='/offers' element={<Offers/>}/>
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/about' element={<About/>}/>
+          <Route path='/cart' element={<Cart/>}/>
+          <Route path='/watchlist' element={<Watchlist/>}/>
           <Route path='/signin' element={<SignIn/>}/>
           <Route path='/signup' element={<SignUp/>}/>
         </Routes>
